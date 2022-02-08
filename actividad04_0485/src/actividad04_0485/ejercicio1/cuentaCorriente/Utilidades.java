@@ -16,10 +16,11 @@ import java.util.Scanner;
  */
 public class Utilidades {
 
-    public static void pideEntero(String pregunta) throws IOException {
+    public static int pideEntero(String pregunta) throws IOException {
 
         boolean comprobador = false;
         int valorEntero = 0;
+        int value = 0;
         do {
             System.out.println("El valor de entrada es: " + pregunta);
             System.out.println("Introduce un numero");
@@ -30,7 +31,7 @@ public class Utilidades {
                     throw new RuntimeException("solo valores enteros");
 
                 } else {
-                    int value = sc.nextInt();
+                    value = sc.nextInt();
                     System.out.println("el valor introducidoes correcto" + value);
                     comprobador = true;
                 }
@@ -45,10 +46,10 @@ public class Utilidades {
             }
 
         } while (comprobador == false);
-
+        return value;
     }
 
-    public static void pideDouble(String pregunta) throws IOException {
+    public static double pideDouble(String pregunta) throws IOException {
 
         boolean comprobador = false;
         String valorRecibido = pregunta;
@@ -78,7 +79,7 @@ public class Utilidades {
             }
 
         } while (comprobador == false);
-
+        return dato;
     }
 
 }

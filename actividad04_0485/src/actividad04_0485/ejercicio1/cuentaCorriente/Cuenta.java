@@ -5,6 +5,8 @@
  */
 package actividad04_0485.ejercicio1.cuentaCorriente;
 
+import java.io.IOException;
+
 /**
  *
  * @author carlo
@@ -28,17 +30,18 @@ public class Cuenta {
         this.titular = titular;
     }
 
-    
     /**
      * GETTERS Y SETERS
      * @return 
      */
-    public int getNumeroCuenta() {
+    public int getNumeroCuenta() throws IOException {
+       numeroCuenta = Utilidades.pideEntero(titular);
+        
         return numeroCuenta;
     }
 
-
-    public double getSaldo() {
+    public double getSaldo() throws IOException {
+        saldo = Utilidades.pideDouble(titular);
         return saldo;
     }
 
@@ -55,10 +58,7 @@ public class Cuenta {
     }
     
     
-    
-    
-    
-    
+
     
     
 }
