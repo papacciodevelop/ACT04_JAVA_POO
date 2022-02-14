@@ -11,17 +11,18 @@ package actividad04_0485.ejercicio03.vehiculos;
  */
 public interface IAlquilable {
     
+    
     /**
      *
      * @param valor requiere un valor int como parametro de entrada
      */
-    public void setNumeros(int valor);
+    public void setNumeroDias(int valor);
     
     /**
      * 
      * 
      */
-   public void getPrecioTotalAlquilerPorDias();
+   public double getPrecioTotalAlquilerPorDias();
     
     
 }
