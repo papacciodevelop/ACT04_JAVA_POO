@@ -22,15 +22,14 @@ public class Cucurucho extends Comida {
         this.saborhelado = saborhelado;
     }
 
-
     @Override
-    public String toString() {  
-       
-       String dat1 = " Nombre " + Nombbre + kcal + " kcal " + " Precio: " + Precio + "€"  +"\n ";
-       List<SaborHelado> dat2 = Arrays.asList(saborhelado);
-       // NO CONSIGO SACAR EL LISTADO ENUMERADO DEL ARRAY 
-      
-        return dat1 +dat2 ;
+    public String toString() {
+
+        String dat1 = " Nombre " + Nombbre + kcal + " kcal " + " Precio: " + Precio + "€" + "\n ";
+        List<SaborHelado> dat2 = Arrays.asList(saborhelado);
+        // NO CONSIGO SACAR EL LISTADO ENUMERADO DEL ARRAY DE AHI QUE USE UN ARRAYLIST
+
+        return dat1 + dat2;
 
     }
 
@@ -57,10 +56,8 @@ public class Cucurucho extends Comida {
         double valorTotal = 0;
         for (int i = 0; i < saborhelado.length; i++) {
             valorTotal += saborhelado[i].Precio;
-
         }
         valorTotal += getPrecio();
-
         return valorTotal;
     }
 

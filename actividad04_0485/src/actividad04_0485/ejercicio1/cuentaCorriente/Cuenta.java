@@ -12,17 +12,17 @@ import java.io.IOException;
  * @author carlo
  */
 public class Cuenta {
+
     int numeroCuenta;
     double saldo;
     String titular;
 
-    
-    
     /**
      * CONSTRUCTOR
+     *
      * @param numeroCuenta
      * @param saldo
-     * @param titular 
+     * @param titular
      */
     public Cuenta(int numeroCuenta, double saldo, String titular) {
         this.numeroCuenta = numeroCuenta;
@@ -32,11 +32,11 @@ public class Cuenta {
 
     /**
      * GETTERS Y SETERS
-     * @return 
+     *
+     * @return
      */
     public int getNumeroCuenta() throws IOException {
-       numeroCuenta = Utilidades.pideEntero(titular);
-        
+        numeroCuenta = Utilidades.pideEntero(titular);
         return numeroCuenta;
     }
 
@@ -56,9 +56,5 @@ public class Cuenta {
     public void setTitular(String titular) {
         this.titular = titular;
     }
-    
-    
 
-    
-    
 }
